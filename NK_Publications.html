@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Noa Kraitzman</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header-panel {
+            width: 100%;
+            height: 200px;
+            background-image: url('SeaIce.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-color: #2c3e50;
+            position: relative;
+        }
+
+        .header-panel::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.9));
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a.active {
+            background-color: #34495e;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        .publications-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .publications-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .publication-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .author-highlight {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .publication-year {
+            font-weight: bold;
+            color: #34495e;
+            margin-right: 0.5rem;
+        }
+
+        .publication-title {
+            font-style: italic;
+        }
+
+        .publication-journal {
+            color: #444;
+        }
+
+        .publication-doi {
+            color: #2980b9;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
+        .publication-doi:hover {
+            text-decoration: underline;
+        }
+
+        .publication-note {
+            color: #e67e22;
+            font-style: italic;
+            margin-left: 0.5rem;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .header-panel {
+                height: 150px;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+        }
+		.publication-doi {
+            color: #2980b9;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 0.5rem;
+            font-size: 0.9em;
+        }
+
+        .publication-doi:hover {
+            text-decoration: underline;
+        }
+
+        .doi-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-panel">
+        <div class="header-content">
+            <h1></h1>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="Home.html">Home</a>
+            <a href="NK_esearch.html">Research</a>
+            <a href="NK_Publications.html" class="active">Publications</a>
+            <a href="NK_Teaching.html">Teaching</a>
+        </div>
+    </nav>
+
+    <div class="publications-container">
+        <h1>Publications</h1>
+        <ul class="publications-list">
+            <!-- [Publications list content remains exactly the same] -->
+			<li class="publication-item">
+                <span class="publication-year">2024</span>
+                K. Stewart, W. Palm, C. Shakespeare, and <span class="author-highlight">N. Kraitzman</span>,
+                <span class="publication-title">The sensitivity of sea ice brine fraction to the freezing temperature and orientation</span>,
+                <span class="publication-journal">Annals of Glaciology</span>
+                <span class="publication-note">Accepted</span>
+                <a href="https://arxiv.org/abs/2310.07072" class="publication-doi">arXiv: 2310.07072</a>
+            </li>
+
+            <li class="publication-item">
+                <span class="publication-year">2024</span>
+                L. G. Bennetts, C. J. Shakespeare, C. A. Vreugdenhil, A. Foppert, B. Gayen, A. Meyer, A. K. Morrison, L. Padman, H. E. Phillips, C. L. Stevens, A. Toffoli, N. C. Constantinou, J. Cusack, A. Cyriac, E. W. Doddridge, M. H. England, D. G. Evans, P. Heil, A. M. Hogg, R. M. Holmes, W. G. Huneke, N. L. Jones, S. R. Keating, A. E. Kiss, <span class="author-highlight">N. Kraitzman</span>, A. Malyarenko, et al.,
+                <span class="publication-title">Closing the loops on Southern Ocean dynamics: From the circumpolar current to ice shelves and from bottom mixing to surface waves</span>,
+                <span class="publication-journal">Reviews of Geophysics</span>,
+                vol. 62, no. 3, e2022RG000781
+				<br>
+				<span class="doi-label">DOI:</span>
+                <a href="https://doi.org/10.1029/2022RG000781" class="publication-doi">10.1029/2022RG000781</a>
+         
+            </li>
+
+            <li class="publication-item">
+                <span class="publication-year">2024</span>
+                <span class="author-highlight">N. Kraitzman</span>, R. Hardenbrook, H. Dinh, N. B. Murphy, E. Cherkaev, J. Zhu, and K. M. Golden,
+                <span class="publication-title">Homogenization for convection-enhanced thermal transport in sea ice</span>,
+                <span class="publication-journal">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</span>,
+                vol. 480, no. 2296, 20230747
+                <span class="publication-note">(issue cover)</span>
+				<br>
+				<span class="doi-label">DOI:</span>
+                <a href="https://doi.org/10.1098/rspa.2023.0747" class="publication-doi">10.1098/rspa.2023.0747</a>
+           
+            </li>
+
+            <li class="publication-item">
+                <span class="publication-year">2022</span>
+                <span class="author-highlight">N. Kraitzman</span>, K. Promislow, and B. Wetton,
+                <span class="publication-title">Slow Migration of Brine Inclusions in First-Year Sea Ice</span>,
+                <span class="publication-journal">SIAM Journal on Applied Mathematics</span>,
+                82(4), 1470-1494
+				<br>
+				<span class="doi-label">DOI:</span>
+                <a href="https://doi.org/10.1137/21M1440244" class="publication-doi">10.1137/21M1440244</a>
+            </li>
+
+            <li class="publication-item">
+                <span class="publication-year">2019</span>
+                A. Christlieb, <span class="author-highlight">N. Kraitzman</span>, and K. Promislow,
+                <span class="publication-title">Competition and complexity in amphiphilic polymer morphology</span>,
+                <span class="publication-journal">Physica D: Nonlinear Phenomena</span>
+				<br>
+				 <span class="doi-label">DOI:</span>
+                <a href="https://doi.org/10.1016/j.physd.2019.06.010" class="publication-doi">10.1016/j.physd.2019.06.010</a>
+            </li>
+
+            <li class="publication-item">
+                <span class="publication-year">2018</span>
+                <span class="author-highlight">N. Kraitzman</span> and K. Promislow,
+                <span class="publication-title">Pearling Bifurcations in the Strong Functionalized Cahn-Hilliard Free Energy</span>,
+                <span class="publication-journal">SIAM Journal on Mathematical Analysis</span>,
+                Volume 50, Issue 3, pp.3395-3426
+				<br>
+				<span class="doi-label">DOI:</span>
+                <a href="https://doi.org/10.1137/16M1108406" class="publication-doi">10.1137/16M1108406</a>
+            </li>
+
+            <li class="publication-item">
+                <span class="publication-year">2014</span>
+                <span class="author-highlight">N. Kraitzman</span> and K. Promislow,
+                <span class="publication-title">An Overview of Network Bifurcations in the Functionalized Cahn-Hilliard Free Energy</span>,
+                <span class="publication-journal">Mathematics of Energy and Climate Change: International Conference and Advanced School Planet Earth</span>,
+                Springer International Publishing, pp. 191-214
+				<br>
+				<span class="doi-label">DOI:</span>
+                <a href="https://doi.org/10.1007/978-3-319-16121-1_8" class="publication-doi">10.1007/978-3-319-16121-1_8</a>
+				
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
