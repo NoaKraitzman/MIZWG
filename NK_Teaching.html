@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Noa Kraitzman</title>
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header-panel {
+            width: 100%;
+            height: 200px;
+            background-image: url('SeaIce.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-color: #2c3e50;
+            position: relative;
+        }
+
+        .header-panel::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.9));
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a.active {
+            background-color: #34495e;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+
+
+        .teaching-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .philosophy-section {
+            margin-bottom: 3rem;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .philosophy-quote {
+            font-style: italic;
+            color: #34495e;
+            border-left: 4px solid #2c3e50;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .courses-section {
+            margin-top: 3rem;
+        }
+
+        .courses-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-item {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 4px solid #2c3e50;
+        }
+
+        .course-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 600px) {
+            .teaching-container {
+                padding: 1.5rem;
+            }
+
+            .philosophy-quote {
+                margin: 1.5rem 0;
+                padding-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-panel">
+        <div class="header-content">
+            <h1></h1>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="NK_Research.html">Research</a>
+            <a href="NK_Publications.html">Publications</a>
+            <a href="NK_Teaching.html" class="active">Teaching</a>
+        </div>
+    </nav>
+
+    <div class="teaching-container">
+        <h1>Teaching</h1>
+
+        <div class="philosophy-section">
+            <h2>Teaching Philosophy</h2>
+            
+            <div class="philosophy-quote">
+                "I believe that anyone can love mathematics - they merely need a teacher that can light their way."
+            </div>
+
+            <p>For me, teaching mathematics means being committed both to the subject matter and my students as individuals. As a researcher, teaching deepens my understanding, helps me maintain a high level of knowledge in the basics of mathematics, and allows me to expose students to ongoing research. I aim to treat each student with respect and consider each classroom as a collection of unique individuals.</p>
+            
+            <p>I am firmly committed to each student as an individual and hope to give them the best possible learning experience. My main goal, as a teacher, is to provide my students with the tools and confidence to enable them to succeed.</p>
+        </div>
+
+        <div class="courses-section">
+            <h2>Courses Taught</h2>
+            <ul class="course-list">
+                <li class="course-item">Mathematics & Climate</li>
+                <li class="course-item">Partial Differential Equations</li>
+                <li class="course-item">Ordinary Differential Equations</li>
+                <li class="course-item">Linear Algebra</li>
+                <li class="course-item">Calculus I</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
