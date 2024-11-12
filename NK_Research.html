@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Noa Kraitzman</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header-panel {
+            width: 100%;
+            height: 200px;
+            background-image: url('SeaIce.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-color: #2c3e50;
+            position: relative;
+        }
+
+        .header-panel::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.9));
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a.active {
+            background-color: #34495e;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        .research-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .research-section {
+            margin-bottom: 3rem;
+            text-align: justify;
+        }
+
+        .research-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .research-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .research-section p {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .header-panel {
+                height: 150px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+
+            .research-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+        }
+		        .image-container {
+            float: right;
+            width: 350px;
+            margin: 0 0 1rem 2rem;
+        }
+
+        .research-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-caption {
+            margin-top: 0.5rem;
+            font-size: 0.9em;
+            color: #666;
+            text-align: justify;
+        }
+
+        .image-citation {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* Clear float after the section */
+        .research-section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                float: none;
+                width: 100%;
+                margin: 1.5rem 0;
+            }
+        }
+
+        .video-container {
+    float: right;
+    width: 350px;
+    margin: 0 0 1rem 2rem;
+}
+
+.research-video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.video-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #666;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        float: none;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+}
+		.centered-video {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="header-panel">
+        <div class="header-content">
+            <h1></h1>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="Home.html">Home</a>
+            <a href="NK_esearch.html">Research</a>
+            <a href="NK_Publications.html" class="active">Publications</a>
+            <a href="NK_Teaching.html">Teaching</a>
+        </div>
+    </nav>
+
+    <div class="research-container">
+        <!--<h1>Research</h1>-->
+
+                <div class="research-section">
+            <h2>Brine Inclusions in Sea Ice</h2>
+            
+            <div class="image-container">
+                <img src="Inclusions.png" alt="Brine inclusion simulation showing different thermal gradients" class="research-image">
+                <div class="image-caption">
+                    Simulation of the evolution of brine inclusions with no thermal gradient (A) and with thermal gradient and cold temperatures (B) or warm temperatures (C).
+                </div>
+                <div class="image-citation">
+					<a href="https://epubs.siam.org/doi/abs/10.1137/21M1440244">
+                    [Kraitzman, Promislow, and Wetton. "Slow Migration of Brine Inclusions in First-Year Sea Ice." <em>SIAM Journal on Applied Mathematics</em> 82.4 (2022): 1470-1494.]</a>
+                </div>
+            </div>
+
+            <p>I am investigating the network formation and evolution of brine channels in sea ice using a thermodynamically consistent model. In this model, the salt entropy relative to the liquid water molar fraction provides a transparent mechanism for salt rejection under ice formation. The liquid water molecules solvate the salt ions, and their removal by the freezing process unfavourably decreases the entropy of the ions. The resulting ejection of salt from the regions of freezing engenders a chemotactic flow for the salt density that leads to the development of spatially extended regions of high salt concentration – the brine inclusions.</p>
+            
+            <p>The evolution of brine inclusions is governed by a coupled system of equations for temperature, salt density relative to liquid water density, and a phase parameter. A multiscale analysis reduces the flow to a moving boundary problem that couples the temperature and salinity to the evolution of the inclusion boundary.</p>
+
+            <p>This model describes the evolution of a brine inclusion up to a 'pinch-off point' when a single inclusion splits into two smaller inclusions. Numerical solutions of the model equations highlight the role of thermal gradients in the pinch-off of brine channels into spherical inclusions: large gradients and warm temperatures, such as those found near the bottom of sea ice, produce a range of small and large inclusions, whereas large gradients and colder temperatures, such as those found near the top of the sea ice, will lead to equal-sized inclusions. This varying of inclusion structure and connectedness with temperature is critical to the permeability of the ice, and thus the percolation and drainage processes.</p>
+        </div>
+
+        <div class="research-section">
+            <h2>Sea Ice as a Composite Material</h2>
+            <p>I am interested in mathematical models that can be used to describe climate phenomena that involve advection enhanced diffusion processes, phase separation and solidification. Using analysis of the heat equation, modification of the Stefan problem and Stieltjes integrals I was able to obtain analytic bounds on the thermal conductivity in the presence of fluid flow, analytic bounds on the trapping constant and a coupled system describing the evolution of the marginal ice zone involving the ice concentration and heat diffusion.</p>
+        </div>
+
+        <div class="research-section">
+            <h2>Functionalized Cahn-Hilliard</h2>
+            <p>The Functionalized Cahn-Hilliard (FCH) is higher-order free energy for blends of amphiphilic polymers and solvent which balances solvation energy of ionic groups against the elastic energy of the underlying polymer backbone. Its gradient flows describe the formation of solvent network structures which are essential to ionic conduction in polymer membranes. The FCH possesses stable, coexisting network morphologies, and we characterise their geometric evolution, bifurcation and competition through a centre-stable manifold reduction which encompasses a broad class of coexisting network morphologies.</p>
+
+            <p>The stability of the different networks is characterised by the meandering and pearling modes associated with the linearized system. For the H-1 gradient flow of the FCH energy, using functional analysis and asymptotic methods, we drive a sharp-interface geometric motion which couples the flow of co-dimension 1 and 2 network morphologies, through the far-field chemical potential. In particular, we derive expressions for the pearling and meander eigenvalues for a class of far-from-self-intersection co-dimension 1 and 2 networks, and show that the linearization is uniformly elliptic off of the associated centre stable space.</p>
+			
+		
+				
+
+
+    </div>
+		<div class="research-section">
+		<video width="640" height="360" autoplay loop muted playsinline class="centered-video">
+        <source src="FCH.mp4" type="video/mp4">
+        <!-- Fallback text for unsupported browsers -->
+        Your browser does not support the video tag.
+    </video>
+		</div>
+		
+</body>
+</html>
